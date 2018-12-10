@@ -15,6 +15,17 @@ public class Professor extends Person{
 
     }
 
+    public void grade(Student student){
+        ArrayList<Integer> theGrades = student.getGrades();
+        int score = 0;
+        for (int i = 0; i <theGrades.size();i++){
+            score += theGrades.get(i);
+        }
+        int finalscore = score/ theGrades.size();
+
+        student.setfinalGrade(finalscore);
+
+    }
 
 
 

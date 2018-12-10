@@ -1,8 +1,8 @@
 
 public class Person {
 
-	public String name;
-	public int Intelligence;
+	String name;
+	int Intelligence;
 
 	public Person(){
 		name = "Default";

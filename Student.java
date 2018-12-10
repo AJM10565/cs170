@@ -14,4 +14,20 @@ public class Student extends Person {
 
     }
 
+    public void take(Exam test){
+        grades.add(Intelligence/ test.hardness);
+    }
+    public ArrayList<Integer> getGrades(){
+        return grades;
+    }
+
+    public void setfinalGrade(int grade){
+        this.coursegrade = grade;
+    }
+    @Override
+    public String toString() {
+        return String.format("Name: " + name + " " + "Grade: " + coursegrade);
+    }
+
+
 }
